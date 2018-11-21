@@ -8,11 +8,11 @@ const userRoutes= () =>{
     });
 
 
-    router.post('/create',()=>{
+    router.post('/create', ()=> {
         return { 'status':200, 'message':'create user'};   
     });
 
     return router;
 }
 
-module.exports={ userRoutes };
+module.exports = { userRoutes };

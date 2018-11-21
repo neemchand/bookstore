@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.use('/public',express.static('public'));
+//app.use('/public',express.static('public'));
 
-//const { createApp } = require('.app/app'); 
+const { createApp } = require('./app/app'); 
 
-
+createApp({ app, express });
 
 
 

@@ -1,10 +1,10 @@
-const { userRoutes } = require('.http/routes/user');
+const { userRoutes } = require('./http/routes/user');
 //const { booksRoutes} = require('.http/routes/book')
 
 const { createApp } = ({app , express})=>{
 
     router = express.Router(); 
-    router.use('api/user',userRoutes);
-    
+    app.use('/api/user', userRoutes);
+    app.use(router);
 };
 module.exports ={ createApp};
