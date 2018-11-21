@@ -1,7 +1,12 @@
-const userRoutes= () =>{
+const userRoutes= ({express}) => {
 
     const router = express.Router();
     router.get('/',()=>{
+
+        return { 'status':200, 'message':'user details'};   
+
+    });
+    router.get('/test',()=>{
 
         return { 'status':200, 'message':'user details'};   
 
@@ -13,6 +18,6 @@ const userRoutes= () =>{
     });
 
     return router;
-}
+};
 
 module.exports = { userRoutes };
