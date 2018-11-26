@@ -1,20 +1,20 @@
 const userRoutes= ({express}) => {
 
     const router = express.Router();
-    router.get('/',()=>{
+    router.get('/',(req, res)=>{
 
-        return { 'status':200, 'message':'user details'};   
-
-    });
-    router.get('/test',()=>{
-
-        return { 'status':200, 'message':'user details'};   
+        res.json( { 'status':200, 'message':'user details'});   
 
     });
+    router.get('/test',(req,res)=>{
+
+        res.json({ 'status':200, 'message':'user details'}); 
+
+    });
 
 
-    router.post('/create', ()=> {
-        return { 'status':200, 'message':'create user'};   
+    router.post('/create', (req, res)=> {
+        res.json({ 'status':200, 'message':'create user'});   
     });
 
     return router;
