@@ -9,6 +9,6 @@ createApp({ app, express });
 
 
 
-const server= app.listen(8080,function(){
+const server = app.listen(8080,function(){
 console.log('running server on port '+server.address().port);
 });
