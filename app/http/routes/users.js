@@ -8,7 +8,7 @@ const userRoutes= ({express}) => {
     });
     router.get('/test',(req,res)=>{
 
-        res.json({ 'status':200, 'message':'user details'}); 
+        res.json({ 'status':200, 'message':'user test endpoint details'}); 
 
     });
 

@@ -1,10 +1,5 @@
 'use strict';
-<<<<<<< HEAD
 const createSequelize = () =>{
-=======
-
-const createSequilize = ()=>{
->>>>>>> 8a2bec8acc1108391b8db2d0dc1b5e6fd62b3a50
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
@@ -41,9 +36,4 @@ db.Sequelize = Sequelize;
 
 return db;
 }
-<<<<<<< HEAD
 module.exports = { createSequelize}
-=======
-
-module.exports = { createSequilize }
->>>>>>> 8a2bec8acc1108391b8db2d0dc1b5e6fd62b3a50
